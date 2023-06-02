@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 20px;
+		background-color: #333;
+		color: white;
+		cursor: pointer;
+	}
+	.navbar .logo {
+		margin-right: auto;
+	}
+	.navbar .hamburger {
+		display: none;
+	}
+	.navbar .menu-items {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar .menu-items li {
+		margin-right: 20px;
+	}
+	.navbar .menu-items a {
+		color: white;
+		text-decoration: none;
+	}
+	.navbar .hamburger {
+		display: block;
+	}
+	.navbar .menu-items {
+		display: flex;
+	}
+	.navbar .menu-items li {
+		margin-right: 10px;
+	}
+	.intro-section {
+		text-align: left;
+	}
+	@media (pointer:coarse) {
+		.container {
+			flex-direction: column;
+			align-items: center;
+		}
+		.navbar {
+			flex-direction: column;
+			align-items: center;
+		}
+		.navbar .hamburger {
+			display: block;
+			order: 2;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		.navbar .menu-items {
+			display: none;
+			flex-direction: column;
+			padding-top: 10px;
+			margin-top: 10px;
+			border-top: 1px solid white;
+			order: 1;
+		}
+		.profile-image-container {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+		.intro-section {
+			order: 3;
+			text-align: center;
+		}
+	}
+	.github-info {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="navbar" id="navbar">
+		<div class="logo">Do yeong Im</div>
+		<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+		<ul class="menu-items" id="menuItems">
+			<li><a onclick="doc.goto('1')">Home</a></li>
+			<li><a onclick="doc.goto('2')">Favorite Albums</a></li>
+			<li><a onclick="doc.goto('3')">MyGithubInfo</a></li>
+		</ul>
+	</div>
+	<div class="github-info">
+		<h2>깃헙 정보</h2>
+		<p>깃헙 사용자: <a href="https://github.com/TopLay21">TopLay21</a></p>
+		<p>저장소 위치: <a href="https://github.com/TopLay21/toplay21.github.io">https://github.com/TopLay21/toplay21.github.io</a></p>
+	</div>
+</body>
+</html>
