@@ -57,6 +57,13 @@
 	.intro-section {
 		text-align: left;
 	}
+
+	@media (max-width: 700) {
+          body {
+            font-size: 150%;
+          }
+    }
+
 	@media (pointer:coarse) {
 		.container {
 			flex-direction: column;
