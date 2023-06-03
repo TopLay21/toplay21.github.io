@@ -76,7 +76,7 @@
 
     @media (max-width: 700) {
       body {
-        font-size: 150%;
+        font-size: 25px;
       }
     }
 
