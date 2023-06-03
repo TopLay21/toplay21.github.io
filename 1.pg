@@ -119,7 +119,7 @@
 		<div class="logo">Do yeong Im</div>
 		<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 		<ul class="menu-items" id="menuItems">
-			<li><a onclick="doc.goto('1')">Home</a></li>
+			<li><a onclick="doc.goto('1')">Introducing</a></li>
 			<li><a onclick="doc.goto('2')">Favorite Albums</a></li>
 			<li><a onclick="doc.goto('3')">MyGithubInfo</a></li>
 		</ul>
